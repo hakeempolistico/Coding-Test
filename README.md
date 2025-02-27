@@ -13,13 +13,17 @@ This repository contains a full-stack application with:
    git clone https://github.com/hakeempolistico/Coding-Test.git
    cd Coding-Test
    ```
+2. Go inside directory:
+   ```sh
+   cd Coding-Test
+   ```
 
-2. Start the services:
+3. Start the services:
    ```sh
    docker-compose -f docker-compose.yml up --build
    ```
 
-3. Access the applications:
+4. Access the applications:
    - Backend: [http://localhost:5000](http://localhost:5000)
    - Frontend: [http://localhost:3000](http://localhost:3000)
 
