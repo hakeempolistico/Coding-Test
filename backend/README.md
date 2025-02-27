@@ -35,6 +35,10 @@ $ npm install
 ## Compile and run the project
 
 ```bash
+mv .env.cpy .env
+```
+
+```bash
 # development
 $ npm run start
 
