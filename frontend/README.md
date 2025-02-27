@@ -2,7 +2,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Before running the project, rename .env.cpy to .env:
+```bash
+mv .env.cpy .env
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -12,4 +17,20 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+
+For deployment:
+
+```bash
+npm run build
+npm run start
+# or
+yarn build
+yarn start
+# or
+pnpm build
+pnpm start
+# or
+bun build
+bun start
 ```
