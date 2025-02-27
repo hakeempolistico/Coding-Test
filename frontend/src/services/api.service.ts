@@ -2,8 +2,9 @@ import { StreakDay } from "@/types/streak.type";
 
 export const fetchData = async (id: number) => {
     try {
-        const API_URL = process.env.NEXT_PUBLIC_API_URL;
+        const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
         const response = await fetch(`${API_URL}/streaks/${id}`);
+        console.log({ API_URL, url: `${API_URL}/streaks/${id}`})
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
