@@ -13,21 +13,18 @@ const HomePage: NextPage = () => {
 
   const [data, setData] = useState<StreakResponse | null>(null);
   
-  const handleFetch = async () => {
-    try {
-      if (!id) {
-        throw new Error('Not found');
-      }
-      const data = await fetchData(Number(id));
-      setData(data);
-    } catch (error) {
-      throw error;
-    }
-  };
-
   useEffect(() => {
     if (!id) return;
-
+  
+    const handleFetch = async () => {
+      try {
+        const data = await fetchData(Number(id));
+        setData(data);
+      } catch (error) {
+        throw error;
+      }
+    };
+  
     handleFetch();
   }, [id]);
 
