@@ -11,7 +11,6 @@ This repository contains a full-stack application with:
 1. Clone the repository:
    ```sh
    git clone https://github.com/hakeempolistico/Coding-Test.git
-   cd Coding-Test
    ```
 2. Go inside directory:
    ```sh
